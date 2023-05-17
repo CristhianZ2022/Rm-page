@@ -1,0 +1,62 @@
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+body {
+
+    height: 800px;
+    font-family: sans-serif;
+    margin: 25px;
+    background-color: darkslateblue
+}
+
+h1{
+
+    color: cornsilk;
+    background-color: steelblue;
+    padding: 10px 10px;
+    border-radius: 9px;
+    text-align: center;
+}
+
+
+button {
+
+    text-decoration: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    color: black;
+    padding: 2px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 2px;
+    cursor: pointer;
+
+}
+
+.button-2{
+
+    margin-left: 35px;
+}

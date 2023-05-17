@@ -1,0 +1,131 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: navy;
+}
+
+header{
+    min-height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.logo img{
+    height: 100px;
+    margin-bottom: 19px;
+    margin-right: 10px;
+}
+
+nav a{
+    font-weight: 600px;
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color: aqua;
+}
+
+@media(max-width: 600px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0;
+    }
+
+}
+
+.imagenesdcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.imagenesdcontainer .champions{
+    position: relative;
+    margin-right: 25px;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.imagenesdcontainer .champions img{
+    height: 200px;
+    width: 200px;
+
+}
+
+.imagenesdcontainer .champions .name{
+    position: absolute;
+    background-color: darkblue;
+    border-radius: 5px;
+    color: azure;
+    display: none;
+    min-width: 100px;
+    width: 170px;   
+    top: -65px;
+    padding: 5px 15px;
+
+}
+
+.imagenesdcontainer .champions .text{
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 170px;
+    text-align: center;
+    box-sizing: border-box;
+
+}
+
+.imagenesdcontainer .champions:hover .name{
+    display: inline-block;
+    transform: translateY(5px);
+}
+
+.imagenesdcontainer .champions .name::before{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    left: 48%;
+    bottom: -20px;
+
+    border-top: 10px solid darkblue;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+@media(max-width: 600px){
+    .imagenesdcontainer{
+    flex-direction: column;
+    height: 250vh;
+    }
+    .imagenesdcontainer .champions img{
+        margin-bottom: 80px;
+        width: 350px;
+    }
+    .imagenesdcontainer .champions .name{
+        width: 320px;
+    }
+
+    .imagenesdcontainer .champions .name .text{
+        width: 320px;
+    }
+}
